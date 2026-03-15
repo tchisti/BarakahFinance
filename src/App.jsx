@@ -11,6 +11,9 @@ import ScreenerPage from './pages/ScreenerPage';
 import NavigatorPage from './pages/NavigatorPage';
 import SimulatorPage from './pages/SimulatorPage';
 import GlossaryPage from './pages/GlossaryPage';
+import InheritancePage from './pages/InheritancePage';
+import BudgetPage from './pages/BudgetPage';
+import ChallengesPage from './pages/ChallengesPage';
 
 export default function App() {
   const [page, setPage] = useState("home");
@@ -32,6 +35,7 @@ export default function App() {
     switch (page) {
       case "home": return <HomePage navigate={navigate} completedLessons={completedLessons} savingsGoals={savingsGoals} />;
       case "learn": return <LearnPage completedLessons={completedLessons} setCompletedLessons={setCompletedLessons} quizScores={quizScores} setQuizScores={setQuizScores} />;
+      case "challenges": return <ChallengesPage completedLessons={completedLessons} />;
       case "zakat": return <ZakatPage />;
       case "checker": return <CheckerPage />;
       case "savings": return <SavingsPage goals={savingsGoals} setGoals={setSavingsGoals} />;
@@ -41,6 +45,8 @@ export default function App() {
       case "navigator": return <NavigatorPage />;
       case "simulator": return <SimulatorPage />;
       case "glossary": return <GlossaryPage />;
+      case "inheritance": return <InheritancePage />;
+      case "budget": return <BudgetPage />;
       default: return <HomePage navigate={navigate} completedLessons={completedLessons} savingsGoals={savingsGoals} />;
     }
   };
@@ -52,8 +58,8 @@ export default function App() {
         {renderPage()}
       </main>
       <footer style={{ background: "#0f2318", padding: "24px 32px", textAlign: "center", fontFamily: "'Source Sans 3', sans-serif" }}>
-        <p style={{ fontSize: 13, color: "rgba(245,240,227,0.5)" }}>BarakahFi — Empowering 2 Billion Muslims</p>
-        <p style={{ marginTop: 4, fontSize: 11, color: "rgba(245,240,227,0.3)" }}>Educational content only. Consult qualified scholars for specific rulings.</p>
+        <p style={{ fontSize: 13, color: "rgba(245,240,227,0.5)" }}>BarakahFi — Empowering Muslims with Shariah-Compliant Financial Knowledge</p>
+        <p style={{ marginTop: 4, fontSize: 11, color: "rgba(245,240,227,0.3)" }}>Educational content only. Consult qualified scholars for specific rulings. All Islamic finance information based on verified scholarly sources.</p>
       </footer>
       <MobileBottomNav page={page} navigate={navigate} />
     </div>

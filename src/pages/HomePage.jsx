@@ -13,10 +13,10 @@ export default function HomePage({ navigate, completedLessons, savingsGoals }) {
   ];
 
   const features = [
-    { id: "learn", icon: "\u{1F4D6}", title: "Islamic Finance 101", desc: "8 interactive lessons with quizzes, Quranic references, and NA-specific guidance.", color: "#1a3a2a" },
-    { id: "zakat", icon: "\u{1F48E}", title: "Zakat Calculator", desc: "Cash, gold, silver, stocks, crypto, property \u2014 with live Nisab tracking.", color: "#8B6914" },
-    { id: "checker", icon: "\u2696\uFE0F", title: "Halal vs Haram Checker", desc: "Compare conventional products against Islamic alternatives with NA providers.", color: "#2d5a3f" },
-    { id: "savings", icon: "\u{1F3AF}", title: "Savings Planner", desc: "Interest-free goals for Hajj, Umrah, education, home, and more.", color: "#6B4423" }
+    { id: "learn", icon: "📖", title: "Islamic Finance Academy", desc: "14 interactive courses across 3 learning tracks — from foundations to advanced contracts.", color: "#1a3a2a" },
+    { id: "challenges", icon: "🎯", title: "Daily Challenges", desc: "Daily quiz challenges, flashcard study, and streak tracking to build your knowledge.", color: "#8B6914" },
+    { id: "budget", icon: "🧮", title: "Halal Budget Planner", desc: "Plan spending with Zakat, Sadaqah, and halal investments built in from the start.", color: "#2d5a3f" },
+    { id: "inheritance", icon: "⚖️", title: "Inheritance Calculator", desc: "Calculate Faraid — Quranic inheritance distribution for your family.", color: "#6B4423" }
   ];
 
   return (
@@ -36,11 +36,11 @@ export default function HomePage({ navigate, completedLessons, savingsGoals }) {
             Your Complete Guide to<br/>Halal Finance in Canada & the US
           </h1>
           <p className="hero-desc" style={{ fontFamily: "'Source Sans 3', sans-serif", fontSize: 17, lineHeight: 1.7, color: "rgba(245,240,227,0.8)", marginBottom: 32, maxWidth: 520 }}>
-            Learn Islamic finance, calculate Zakat, screen halal stocks, compare mortgages, find local providers, and plan your financial life \u2014 all Shariah-compliant.
+            Learn Islamic finance, calculate Zakat, plan your halal budget, calculate Faraid inheritance, screen stocks, and build wealth — all Shariah-compliant, for every life stage.
           </p>
           <div className="hero-buttons" style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <button className="btn-gold" onClick={() => navigate("learn")}>Start Learning \u2192</button>
-            <button className="btn-outline-gold" onClick={() => navigate("navigator")}>Life Stage Guide</button>
+            <button className="btn-gold" onClick={() => navigate("learn")}>Start Learning →</button>
+            <button className="btn-outline-gold" onClick={() => navigate("challenges")}>Daily Challenge 🎯</button>
           </div>
         </div>
         <div className="hero-big-diamond" style={{ position: "absolute", right: 40, top: "50%", transform: "translateY(-50%)", fontSize: 120, opacity: 0.08 }}>{"\u25C7"}</div>
