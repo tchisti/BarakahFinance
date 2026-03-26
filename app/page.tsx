@@ -218,6 +218,64 @@ export default function HomePage() {
         </Card>
       </section>
 
+      {/* Credentials & Trust Section */}
+      <section className="container py-16 md:py-24">
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="mb-4 border-primary/30">
+              <Shield className="h-3 w-3 mr-1" />
+              Trusted & Verified
+            </Badge>
+            <h2 className="font-serif text-3xl font-bold md:text-4xl">
+              Developed by Experts
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+              Built with scholarly guidance to ensure authentic Islamic finance education
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            <Card className="border-primary/20">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <Users className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">Dr. Tahir Chisti</h3>
+                    <p className="text-sm text-primary font-medium">Lead Developer</p>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      Passionate about making Islamic finance accessible through technology and education for the Muslim community.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="border-primary/20">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <Shield className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">Shaykh/Mufti Ismail Siddiqui</h3>
+                    <p className="text-sm text-primary font-medium">Shariah Advisor</p>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      Providing scholarly review and guidance to ensure all content adheres to authentic Islamic principles and Fiqh rulings.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="mt-8 text-center">
+            <div className="inline-flex items-center gap-2 rounded-full bg-green-500/10 px-4 py-2 text-sm text-green-700 dark:text-green-400">
+              <CheckCircle2 className="h-4 w-4" />
+              All content verified for Shariah compliance
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="border-t border-border bg-sidebar text-sidebar-foreground">
         <div className="container py-16 md:py-24">
